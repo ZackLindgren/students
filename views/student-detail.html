@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>GRC Student Detail</title>
+</head>
+<body>
+<h1>GRC Student Detail</h1>
+
+<p>SID: {{ @student['sid'] }}</p>
+<p>Name: {{ @student['last'] }}, {{ @student['first'] }}</p>
+<p>Birthdate: {{ date('F j, Y', strtotime(@student['birthdate'])) }}</p>
+<p>Advisor: {{ @student['advisor'] }}</p>
+<p>GPA: {{ @student['gpa'] }}</p>
+
+</body>
+</html>

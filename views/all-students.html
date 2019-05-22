@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>GRC Students</title>
+</head>
+<body>
+<h1>GRC Student List</h1>
+
+<ol>
+    <repeat group="{{ @students }}" value="{{ @student }}">
+        <li><a href="detail/{{ @student['sid'] }}">{{ @student['sid'] }} - {{ @student['last'] }}, {{ @student['first'] }}</a></li>
+    </repeat>
+</ol>
+</body>
+</html>
