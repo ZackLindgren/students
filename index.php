@@ -15,6 +15,9 @@ $f3->route('GET /', function($f3) {
     global $db;
     $students = $db->getStudents();
     $f3->set('students', $students);
+
+    //echo print_r($f3->get('students'));
+
     $template = new Template();
     echo $template->render('views/all-students.html');
 });

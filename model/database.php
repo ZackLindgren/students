@@ -29,7 +29,7 @@ class Database
     function getStudents()
     {
         //1. Define the query
-        $sql = "SELECT * FROM student
+        $sql = "SELECT * FROM students
                 ORDER BY last, first";
 
         //2. Prepare the statement
@@ -47,7 +47,7 @@ class Database
     function getDetails($sid)
     {
         //1. Define the query
-        $sql = "SELECT * FROM student
+        $sql = "SELECT * FROM students
                 WHERE sid = :sid";
 
         //2. Prepare the statement
